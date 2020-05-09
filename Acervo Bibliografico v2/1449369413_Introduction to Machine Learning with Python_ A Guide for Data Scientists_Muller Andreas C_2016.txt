@@ -1,0 +1,5 @@
+1449369413
+Introduction to Machine Learning with Python: A Guide for Data Scientists
+Muller Andreas C
+2016
+Machine Learning

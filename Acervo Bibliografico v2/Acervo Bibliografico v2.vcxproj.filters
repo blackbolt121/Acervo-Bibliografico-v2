@@ -24,6 +24,9 @@
     <ClCompile Include="stack.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="libro.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arbol.h">
@@ -32,11 +35,43 @@
     <ClInclude Include="frame.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Nodo.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="stack.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="Nodo.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="libro.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\Acervo Bibliografico\Acervo Bibliografico\1449369413_Introduction to Machine Learning with Python_ A Guide for Data Scientists_Muller Andreas C_2016.txt">
+      <Filter>Archivos de encabezado</Filter>
+    </Text>
+    <Text Include="1449369413_Introduction to Machine Learning with Python_ A Guide for Data Scientists_Muller Andreas C_2016.txt">
+      <Filter>Archivos de encabezado</Filter>
+    </Text>
+    <Text Include="1491957662_Python for Data Analysis_ Data Wrangling with Pandas, Numpy, and Ipython_Wes McKinney_2017.txt">
+      <Filter>Archivos de encabezado</Filter>
+    </Text>
+    <Text Include="1593275994_Automate the Boring Stuff with Python Practical Programming for Total Beginners_Al Sweigart_2019.txt">
+      <Filter>Archivos de encabezado</Filter>
+    </Text>
+    <Text Include="1593278551_Linux Basics for Hackers_ Getting Started with Networking, Scripting, and Security in Kali_Occupytheweb_2018.txt">
+      <Filter>Archivos de encabezado</Filter>
+    </Text>
+    <Text Include="1593279280_Python Crash Course A Hands-On, Project-Based Introduction to Programming_Eric Matthes_2019.txt">
+      <Filter>Archivos de encabezado</Filter>
+    </Text>
+    <Text Include="9682426561_EL CONDE DE MONTECRISTO_ALEJANDRO DUMAS_1990.txt">
+      <Filter>Archivos de encabezado</Filter>
+    </Text>
+    <Text Include="9781593276041_Python Playground Geeky Projects for the Curious Programmer_Mahesh Venkitachalam_2015.txt">
+      <Filter>Archivos de encabezado</Filter>
+    </Text>
+    <Text Include="ruta.txt">
+      <Filter>Archivos de encabezado</Filter>
+    </Text>
   </ItemGroup>
 </Project>

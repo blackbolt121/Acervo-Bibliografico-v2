@@ -1,0 +1,7 @@
+9682426561_EL CONDE DE MONTECRISTO_ALEJANDRO DUMAS_1990.txt
+1593279280_Python Crash Course A Hands-On, Project-Based Introduction to Programming_Eric Matthes_2019.txt
+1593275994_Automate the Boring Stuff with Python Practical Programming for Total Beginners_Al Sweigart_2019.txt
+9781593276041_Python Playground Geeky Projects for the Curious Programmer_Mahesh Venkitachalam_2015.txt
+1593278551_Linux Basics for Hackers_ Getting Started with Networking, Scripting, and Security in Kali_Occupytheweb_2018.txt
+1491957662_Python for Data Analysis_ Data Wrangling with Pandas, Numpy, and Ipython_Wes McKinney_2017.txt
+1449369413_Introduction to Machine Learning with Python_ A Guide for Data Scientists_Muller Andreas C_2016.txt

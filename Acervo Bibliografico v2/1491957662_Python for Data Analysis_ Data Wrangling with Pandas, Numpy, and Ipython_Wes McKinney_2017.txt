@@ -1,0 +1,5 @@
+1491957662
+Python for Data Analysis: Data Wrangling with Pandas, Numpy, and Ipython
+Wes McKinney
+2017
+Programacion

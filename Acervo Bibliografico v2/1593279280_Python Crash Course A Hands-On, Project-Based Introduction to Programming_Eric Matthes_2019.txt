@@ -1,0 +1,5 @@
+1593279280
+Python Crash Course A Hands-On, Project-Based Introduction to Programming
+Eric Matthes
+2019
+Programacion
