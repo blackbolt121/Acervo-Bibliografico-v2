@@ -3,7 +3,7 @@
 #include <string>
 #include <ostream>
 #include <fstream>
-#include "List.h"
+#include <list>
 class libro
 {
 public:
@@ -25,6 +25,8 @@ public:
 		std::string getClave_o_ISBN();
 		friend std::ostream& operator << (std::ostream &out, const libro& book);
 		friend bool operator == (const libro& book1, const libro& book2);
+		friend bool operator <(const libro& book1, const libro& book2);
+		friend bool operator >(const libro& book1, const libro& book2);
 private:
 	std::string Titulo;
 	std::string Autor;

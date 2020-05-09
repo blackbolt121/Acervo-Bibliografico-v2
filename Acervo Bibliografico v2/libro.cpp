@@ -1,6 +1,6 @@
 #include "libro.h"
 #include <algorithm>
-bool libro::isEmpty()
+bool libro::isEmpty() //Verifica si el libro esta vacio
 {
 	if (this->Anio_de_Edición.compare("") == 0 or this->Autor.compare("") == 0 or this->Clave_o_ISBN.compare("") == 0 or this->Tema.compare("") == 0 or this->Titulo.compare("") == 0)
 		return true;
@@ -8,7 +8,7 @@ bool libro::isEmpty()
 		return false;
 }
 
-libro libro::crearLibro()
+libro libro::crearLibro() //Crea un libro
 {
 	libro book;
 	std::string aux;
@@ -43,7 +43,7 @@ std::string libro::getTitulo()
 	return this->Titulo;
 }
 
-void libro::setAutor(const std::string& autor)
+void libro::setAutor(const std::string& autor) 
 {
 	this->Autor = autor;
 }
@@ -83,7 +83,7 @@ std::string libro::getClave_o_ISBN()
 	return this->Clave_o_ISBN;
 }
 
-std::string libro::createFilePath()
+std::string libro::createFilePath() //Crea una ruta
 {
 	std::string retorno;
 	retorno = this->Clave_o_ISBN + "_" + this->Titulo + "_" + this->Autor + "_" + this->Anio_de_Edición + ".txt";
@@ -101,39 +101,41 @@ libro libro::crearLibroConArchivo(const std::string &path)
 	libro lib;
 	arch.open(path.c_str(), std::ios::in);
 	if (!arch.fail()) {
-		List<std::string> list;
+		std::list<std::string> list;
 		std::string aux;
 		while (!arch.eof()) {
 			std::getline(arch, aux);
-			list.insert(aux);
+			list.push_back(aux);
 		}
-		if (list.size() == 5) {
-			for (int i = 0; i < 5; i++) {
-				aux = list.getHead()->getDato();
-				switch (i) {
+		if (list.size()== 5) {
+			int count = 0;
+			for (std::string it : list) {
+				switch (count) {
 				case 0:
-					lib.setClave_o_ISBN(aux);
+					lib.setClave_o_ISBN(it);
 					break;
 				case 1:
-					lib.setTitulo(aux);
+					lib.setTitulo(it);
 					break;
 				case 2:
-					lib.setAutor(aux);
+					lib.setAutor(it);
 					break;
 				case 3:
-					lib.setAnio_de_Edicion(aux);
+					lib.setAnio_de_Edicion(it);
 					break;
 				case 4:
-					lib.setTema(aux);
+					lib.setTema(it);
 					break;
 				}
-				list.pop(0);
-			}
+				count++;
+			}	
 		}
+		list.clear();
 		arch.close();
 	}
 		else
 			std::cout << "No se pudo abrir el archivo" << std::endl;
+	
 	return lib;
 }
 
@@ -171,4 +173,15 @@ bool operator==(const libro& book1, const libro& book2)
 		return false;
 	}
 	// TODO: Insertar una instrucción "return" aquí
+}
+
+bool operator<(const libro& book1, const libro& book2)
+{
+	return (book1.Clave_o_ISBN < book2.Clave_o_ISBN)? true : false;
+	
+}
+
+bool operator>(const libro& book1, const libro& book2)
+{
+	return (book1.Clave_o_ISBN > book2.Clave_o_ISBN)? true : false;
 }
