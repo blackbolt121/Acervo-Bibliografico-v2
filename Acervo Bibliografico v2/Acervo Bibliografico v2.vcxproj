@@ -149,12 +149,16 @@
   <ItemGroup>
     <ClCompile Include="Acervo Bibliografico v2.cpp" />
     <ClCompile Include="Arbol.cpp" />
+    <ClCompile Include="listaIdString.cpp" />
+    <ClCompile Include="BusquedaPorTitulo.cpp" />
     <ClCompile Include="libro.cpp" />
     <ClCompile Include="stack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arbol.h" />
+    <ClInclude Include="BusquedaPorTitulo.h" />
     <ClInclude Include="frame.h" />
+    <ClInclude Include="listaIdString.h" />
     <ClInclude Include="libro.h" />
     <ClInclude Include="Nodo.h" />
     <ClInclude Include="stack.h" />
