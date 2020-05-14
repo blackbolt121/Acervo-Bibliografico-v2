@@ -9,14 +9,7 @@ using namespace std;
 int main()
 {
     
-    libro aux = libro::crearLibroConArchivo("9682426561_EL CONDE DE MONTECRISTO_ALEJANDRO DUMAS_1990.txt");
-    libro aux2 = libro::crearLibroConArchivo("1491957662_Python for Data Analysis_ Data Wrangling with Pandas, Numpy, and Ipython_Wes McKinney_2017.txt");
-    BusquedaPorTitulo s;
-    s.insertar(aux);
-    s.insertar(aux2);
-    libro uno;
-    cin >> uno;
-    cout << uno << endl;
+   
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
