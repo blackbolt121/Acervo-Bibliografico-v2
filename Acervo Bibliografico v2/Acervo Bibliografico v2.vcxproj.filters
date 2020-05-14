@@ -76,9 +76,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\..\Acervo Bibliografico\Acervo Bibliografico\1449369413_Introduction to Machine Learning with Python_ A Guide for Data Scientists_Muller Andreas C_2016.txt">
-      <Filter>Archivos de encabezado</Filter>
-    </Text>
     <Text Include="1449369413_Introduction to Machine Learning with Python_ A Guide for Data Scientists_Muller Andreas C_2016.txt">
       <Filter>Archivos de encabezado</Filter>
     </Text>

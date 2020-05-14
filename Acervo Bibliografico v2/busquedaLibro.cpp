@@ -14,7 +14,7 @@ void busquedaLibro::insertar(libro h, string par)
 
 	}
 	else {
-		aux.insertarLibro(h, );
+		aux.insertarLibro(h, par);
 		this->entrada.insertar(aux); //En caso de que el arbol este vacio, inserta el nodo
 	}
 }
