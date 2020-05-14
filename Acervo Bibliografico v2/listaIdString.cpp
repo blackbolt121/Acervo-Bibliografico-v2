@@ -4,6 +4,11 @@ listaIdString::listaIdString(string id)
 	this->id = id;
 }
 
+list<libro> listaIdString::getLista()
+{
+	return this->s;
+}
+
 void listaIdString::insertarLibro(const libro& lib, const string& par)
 {
 	if (this->id == par) {
@@ -12,4 +17,28 @@ void listaIdString::insertarLibro(const libro& lib, const string& par)
 	else {
 
 	}
+}
+
+bool operator==(const listaIdString& a, const listaIdString& b)
+{
+	if (a.id == b.id)
+		return true;
+	else
+		return false;
+}
+
+bool operator<(const listaIdString& a, const listaIdString& b)
+{
+	if (a.id < b.id)
+		return true;
+	else
+		return false;
+}
+
+bool operator>(const listaIdString& a, const listaIdString& b)
+{
+	if (a.id > b.id)
+		return true;
+	else
+		return false;
 }

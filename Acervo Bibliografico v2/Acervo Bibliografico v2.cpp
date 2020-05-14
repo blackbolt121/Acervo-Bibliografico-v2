@@ -2,21 +2,18 @@
 //
 
 #include <iostream>
-#include "Arbol.h"
-#include "libro.h"
+#include "BusquedaPorTitulo.h"
 #include <fstream>
 #include <string>
+using namespace std;
 int main()
 {
     
-    
     libro aux = libro::crearLibroConArchivo("9682426561_EL CONDE DE MONTECRISTO_ALEJANDRO DUMAS_1990.txt");
     libro aux2 = libro::crearLibroConArchivo("1491957662_Python for Data Analysis_ Data Wrangling with Pandas, Numpy, and Ipython_Wes McKinney_2017.txt");
-    cout << aux << endl;
-    cout << aux2 << endl;
-    if (aux > aux2) {
-        cout << "Aux es de mayor jerarquia" << endl;
-    }
+    BusquedaPorTitulo s;
+    s.insertar(aux);
+    s.insertar(aux2);
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
