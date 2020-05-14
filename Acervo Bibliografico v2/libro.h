@@ -27,6 +27,7 @@ public:
 		friend bool operator == (const libro& book1, const libro& book2);
 		friend bool operator <(const libro& book1, const libro& book2);
 		friend bool operator >(const libro& book1, const libro& book2);
+		friend std::istream& operator >> (std::istream& in, libro& book);
 private:
 	std::string Titulo;
 	std::string Autor;

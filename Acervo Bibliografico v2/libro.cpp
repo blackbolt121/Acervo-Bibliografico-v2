@@ -185,3 +185,25 @@ bool operator>(const libro& book1, const libro& book2)
 {
 	return (book1.Clave_o_ISBN > book2.Clave_o_ISBN)? true : false;
 }
+
+std::istream& operator>>(std::istream& in, libro& book)
+{
+	std::string aux;
+	std::cout << "Digite el nombre del autor: ";
+	std::getline(std::cin, aux, '\n');
+	book.Autor = aux;
+	std::cout << "Digite el ISBN: ";
+	std::getline(std::cin, aux, '\n');
+	book.Clave_o_ISBN = aux;
+	std::cout << "Digite el Titulo del libro: ";
+	std::getline(std::cin, aux, '\n');
+	book.Titulo = aux;
+	std::cout << "Digite el a" << char(164) << "o del libro: ";
+	std::getline(std::cin, aux, '\n');
+	book.Anio_de_Edición = aux;
+	std::cout << "Digite el tema del libro: ";
+	std::getline(std::cin, aux, '\n');
+	book.Tema = aux;
+	std::fflush(stdin);
+	return in;
+}

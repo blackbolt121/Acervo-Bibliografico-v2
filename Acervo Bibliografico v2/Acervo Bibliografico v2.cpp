@@ -14,6 +14,9 @@ int main()
     BusquedaPorTitulo s;
     s.insertar(aux);
     s.insertar(aux2);
+    libro uno;
+    cin >> uno;
+    cout << uno << endl;
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
