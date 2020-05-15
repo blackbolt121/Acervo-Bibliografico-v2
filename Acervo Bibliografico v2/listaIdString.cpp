@@ -42,3 +42,10 @@ bool operator>(const listaIdString& a, const listaIdString& b)
 	else
 		return false;
 }
+
+ostream& operator<<(ostream& out, const listaIdString& a)
+{
+	out << a.id;
+	return out;
+	// TODO: Insertar una instrucción "return" aquí
+}

@@ -7,6 +7,7 @@ class busquedaLibro
 public:
 	virtual void insertar(libro h, string par = "");
 	list<libro> getLibros(string par);
+	stack<listaIdString> getIDs();
 
 private:
 	Arbol<listaIdString> entrada;

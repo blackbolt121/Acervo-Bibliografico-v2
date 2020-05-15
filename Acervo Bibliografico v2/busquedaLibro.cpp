@@ -28,3 +28,12 @@ list<libro> busquedaLibro::getLibros(string par)
 		lista = aux2->getDato()->getLista();
 	return lista;
 }
+
+stack<listaIdString> busquedaLibro::getIDs()
+{
+	if (entrada.size() > 0)
+		return entrada.recorrerInOrden();
+	else
+		cout << "Sin elementos en la lista" << endl;
+	return stack<listaIdString>();
+}
