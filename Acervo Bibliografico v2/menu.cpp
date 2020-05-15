@@ -48,6 +48,7 @@ void menu::imprimirPosiblesBusquedas(int op, busquedaLibro& a, busquedaPorAutor&
 		menu::imprimirPosiblesBusquedas(op, a, b, c, d);
 		break;
 	}
+	system("cls");
 	if (aux.getSize() > 0) {
 		frame<listaIdString>* printer = aux.getPeek();
 		while (printer != nullptr) {
@@ -58,10 +59,12 @@ void menu::imprimirPosiblesBusquedas(int op, busquedaLibro& a, busquedaPorAutor&
 	else {
 		cout << "Sin resultados " << endl;
 	}
+	system("Pause");
 }
 
 void menu::buscar(const string& e, int i, busquedaLibro& a, busquedaPorAutor& b, busquedaPorEspecialidad& c, BusquedaPorTitulo& d)
 {
+	system("cls");
 	string aux = "Resultados de " + e;
 	list<libro> res;
 	switch (i) {
@@ -93,12 +96,14 @@ void menu::buscar(const string& e, int i, busquedaLibro& a, busquedaPorAutor& b,
 	if (res.size() > 0) {
 		cout << aux << endl;
 		for (libro it : res) {
-			cout << it << endl;
+			cout << it << endl << endl;;
 		}
 	}
 	else {
 		cout << "Sin " << aux << endl;
 	}
+	system("Pause");
+	system("cls");
 }
 
 void menu::run(busquedaLibro& a, busquedaPorAutor& b, busquedaPorEspecialidad& c, BusquedaPorTitulo& d, bool init)
@@ -112,6 +117,7 @@ void menu::run(busquedaLibro& a, busquedaPorAutor& b, busquedaPorEspecialidad& c
 	cin.ignore(100, '\n');
 	switch (op) {
 	case 1:
+		system("cls");
 		cout << "Ver opciones de busqueda segun: \n1.- ISBN \n2.- Autor \n3.- Especialidad \n4.- Titulo\n 5.- Volver a menu \n--->";
 		cin >> op;
 		cin.ignore(100, '\n');
@@ -126,7 +132,9 @@ void menu::run(busquedaLibro& a, busquedaPorAutor& b, busquedaPorEspecialidad& c
 	case 3:
 	case 4:
 	case 5:
+
 		op--;
+		system("cls");
 		cout << "Escriba su busqueda: "; getline(cin, aux, '\n');
 		if (op < 5) {
 			menu::buscar(aux, op, a, b, c, d);

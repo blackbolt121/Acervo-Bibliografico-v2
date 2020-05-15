@@ -7,6 +7,7 @@ using namespace std;
 int main()
 {
     busquedaLibro a; busquedaPorAutor b; busquedaPorEspecialidad c; BusquedaPorTitulo d;
+    system("exit");
     menu::run(a, b, c, d);
 }
 
