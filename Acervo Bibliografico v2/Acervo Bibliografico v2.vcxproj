@@ -155,6 +155,7 @@
     <ClCompile Include="listaIdString.cpp" />
     <ClCompile Include="BusquedaPorTitulo.cpp" />
     <ClCompile Include="libro.cpp" />
+    <ClCompile Include="menu.cpp" />
     <ClCompile Include="stack.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +167,7 @@
     <ClInclude Include="frame.h" />
     <ClInclude Include="listaIdString.h" />
     <ClInclude Include="libro.h" />
+    <ClInclude Include="menu.h" />
     <ClInclude Include="Nodo.h" />
     <ClInclude Include="stack.h" />
   </ItemGroup>

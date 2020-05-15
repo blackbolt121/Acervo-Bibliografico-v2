@@ -2,14 +2,14 @@
 //
 
 #include <iostream>
-#include "BusquedaPorTitulo.h"
-#include <fstream>
-#include <string>
+#include "menu.h"
 using namespace std;
 int main()
 {
-    
-   
+    busquedaLibro a; busquedaPorAutor b; busquedaPorEspecialidad c; BusquedaPorTitulo d;
+    menu::iniciar(a, b, c, d);
+    cout << b.getLibros("Mahesh Venkitachalam").size() << endl;
+
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar

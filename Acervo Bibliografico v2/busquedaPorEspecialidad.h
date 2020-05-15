@@ -4,6 +4,6 @@ using namespace std;
 class busquedaPorEspecialidad : public busquedaLibro
 {
 public:
-	void insertar(libro h, string par);
+	void insertar(libro h, string par = "");
 };
 

@@ -2,6 +2,5 @@
 
 void busquedaPorEspecialidad::insertar(libro h, string par)
 {
-	par = h.getTema();
-	busquedaLibro::insertar(h, par);
+	busquedaLibro::insertar(h, h.getTema());
 }
